@@ -28,11 +28,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen bg-background antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
-          <ThemeToggle />
-          {children}
-          <Toaster />
+          <main className="relative flex min-h-screen flex-col">
+            <ThemeToggle />
+            {children}
+            <Toaster />
+          </main>
         </ThemeProvider>
       </body>
     </html>
