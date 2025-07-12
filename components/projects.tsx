@@ -15,7 +15,7 @@ type Project = {
     url: string
   }
   github: string
-  // demo: string
+  demo: string
   technologies: string[]
 }
 
@@ -28,19 +28,46 @@ const projects: Project[] = [
       url: "/projects/gifs/t20.gif", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr",
-     
+    demo: "https://github.com/Hasnainsardarr",
     technologies: ["Power BI", "Web Scrapping", "Pandas","Power Query" , "DAX"],
   },
   {
-    title: "Machine Learning Based Home Price Prediction",
-    description: "Developed a web app to predict home prices using a machine learning model (sklearn, linear regression). The project includes data cleaning, feature engineering, a Flask API for predictions, and deployment on AWS EC2.",
+    title: "Prepium",
+    description: "An all-in-one medical exam preparation platform offering mock exams, study notes, bookmarks, flashcards, and an AI-powered chatbot to assist learners in their journey.",
     media: {
-      type: "image",
-      url: "/projects/images/priceprediction.png ", // Replace with your image path
+      type: "gif",
+      url: "/projects/images/prepiumProject.png", // Replace with your GIF path
     },
-    github: "https://github.com/Hasnainsardarr/Real-Estate-Price-Model",
-    // demo: "https://realestatepriceprediction.herokuapp.com/",
-    technologies: ["Flask", "AWS", "Scikit-learn", "Pandas"],
+    github: "https://github.com/Hasnainsardarr",
+    demo: "https://www.prepium.org/",
+     
+    technologies: ["Next.js", "React Native", "AI Chatbot","Redux" , "Stripe"],
+  },
+  
+  {
+    title: "ApneaGuard",
+    description: "A machine learning-powered mobile application designed to detect sleep apnea using heart rate and SpO₂ data from smartwatches.",
+    media: {
+      type: "gif",
+      url: "/projects/images/ApneamockupsSS.png", // Replace with your GIF path
+    },
+    github: "https://github.com/Hasnainsardarr",
+    demo: "https://apneaguard.vercel.app/",
+     
+    technologies: ["Next.js", "React Native","Supabase" , "AWS",  " Scikit-learn", "NumPy", " Matplotlib", "Buisinees Intelligence"],
+  },
+
+  {
+    title: "MadaddGar",
+    description: "A multi-vendor home service platform that enables users to book services while allowing multiple companies to bid on service requests. The system facilitates seamless service management with real-time updates and secure transactions.",
+    media: {
+      type: "gif",
+      url: "/projects/images/madaddgarProject.png", // Replace with your GIF path
+    },
+    github: "https://github.com/Hasnainsardarr",
+    demo: "https://www.madaddgar.com/",
+     
+    technologies: ["EJS", "React", "Node.js", "REST API", "Socket.io", "Redux"],
   },
   {
     title: "Atliq Hardware Sales Insights Dashboard",
@@ -50,6 +77,7 @@ const projects: Project[] = [
       url: "/projects/gifs/atliqPBI.gif", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr",
+    demo: "https://app.powerbi.com/view?r=eyJrIjoiNzQ5NGJkZjUtNzU5Ni00ZjU3LWE4MzMtNzA4ZGJlMDQxZjQ2IiwidCI6IjM1NzJkNGE5LTcxNGQtNGMxNS05NzI5LTg1NzY5NGM1MzI5YiIsImMiOjh9",
      
     technologies: ["Python", "DAX", " Power BI", "Buisinees Intelligence"],
   },
@@ -61,8 +89,20 @@ const projects: Project[] = [
       url: "/projects/gifs/chatbotgif.gif", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr/ASK_WEB_AI",
+    demo: "https://askwebai.vercel.app/",
  
     technologies: ["Next.js 14", "Meta-Llama-3-8B-Instruct", "Vercel AI SDK", "RAG"],
+  },
+  {
+    title: "Machine Learning Based Home Price Prediction",
+    description: "Developed a web app to predict home prices using a machine learning model (sklearn, linear regression). The project includes data cleaning, feature engineering, a Flask API for predictions, and deployment on AWS EC2.",
+    media: {
+      type: "image",
+      url: "/projects/images/priceprediction.png ", // Replace with your image path
+    },
+    github: "https://github.com/Hasnainsardarr/Real-Estate-Price-Model",
+    demo: "http://13.127.81.177:8080/",
+    technologies: ["Flask", "AWS", "Scikit-learn", "Pandas"],
   },
   {
     title: "Full-Stack Restaurant Website with MERN Stack",
@@ -72,6 +112,7 @@ const projects: Project[] = [
       url: "/projects/gifs/foodiigif.gif ", // Replace with your image path
     },
     github: "https://github.com/Hasnainsardarr/EatBuddy",
+    demo: "https://eatbuddy.vercel.app/",
      
     technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Firebase","JWT","React Context API / Redux "],
   },
@@ -83,6 +124,7 @@ const projects: Project[] = [
       url: "/projects/images/superstore.jpg", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr",
+    demo: "https://app.powerbi.com/view?r=eyJrIjoiMzIwNzc4NzMtNzNlMy00ZmU4LWE4MGEtNTU1NjNhNzY2ZjEyIiwidCI6IjM1NzJkNGE5LTcxNGQtNGMxNS05NzI5LTg1NzY5NGM1MzI5YiIsImMiOjh9",
  
     technologies: ["Excel", "Power BI", "DAX" ],
   },
@@ -94,6 +136,7 @@ const projects: Project[] = [
       url: "/projects/images/store.jpg", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr",
+    demo: "https://github.com/Hasnainsardarr",
  
     technologies: ["Excel", "Power BI", "DAX" ],
   },
@@ -105,6 +148,7 @@ const projects: Project[] = [
       url: "/projects/images/qbcc.png", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr/DataScrapper-forContractersData",
+    demo: "https://github.com/Hasnainsardarr/DataScrapper-forContractersData",
  
     technologies: ["Beautiful Soup", "Pandas", "API Handling:" ],
   },
@@ -116,6 +160,7 @@ const projects: Project[] = [
       url: "/projects/images/shopify.jpg", // Replace with your GIF path
     },
     github: "https://github.com/Hasnainsardarr/Shopify-data-scrapping",
+    demo: "https://github.com/Hasnainsardarr/Shopify-data-scrapping",
  
     technologies: ["Beautiful Soup", "Pandas", "API Handling:" ],
   },
@@ -127,6 +172,7 @@ const projects: Project[] = [
       url: "/projects/gifs/cryptogif.gif ", // Replace with your image path
     },
     github: "https://github.com/Hasnainsardarr/ReactWorks/tree/main/Cryptoapp/project-6",
+    demo: "https://cryptodashboard-react.vercel.app/",
      
     technologies: ["React.js", "Chakra UI", "Data Visualization", "Recharts"],
   },
@@ -135,7 +181,7 @@ const projects: Project[] = [
 export default function Projects() {
   const [showAll, setShowAll] = useState(false)
   const [isImageLoading, setIsImageLoading] = useState(true)
-  const displayedProjects = showAll ? projects : projects.slice(0, 3)
+  const displayedProjects = showAll ? projects : projects.slice(0, 5)
 
   return (
     <section id="projects" className="py-20 bg-muted/50">
@@ -181,7 +227,7 @@ export default function Projects() {
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-2 py-1 text-xs rounded-full bg-primary/10 text-primary-foreground"
+                    className="px-2 py-1 text-xs rounded-full bg-primary/10 text-white"
                   >
                     {tech}
                   </span>
@@ -199,7 +245,7 @@ export default function Projects() {
                     Repository
                   </a>
                 </Button>
-                {/* <Button variant="outline" size="sm" asChild>
+                <Button variant="outline" size="sm" asChild>
                   <a
                     href={project.demo}
                     target="_blank"
@@ -209,12 +255,12 @@ export default function Projects() {
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
                   </a>
-                </Button> */}
+                </Button>
               </div>
             </motion.div>
           ))}
         </div>
-        {projects.length > 3 && (
+        {projects.length > 5 && (
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

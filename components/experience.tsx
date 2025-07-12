@@ -27,6 +27,12 @@ const stats = [
 
 const experiences = [
   {
+    title: "Frontend Engineer",
+    company: "GoManzanas",
+    period: "Jan 2025 - Jun 2025",
+    description: "Worked remotely as a full-time frontend engineer for a US-based company, developing ace1t.com - an AI-powered platform helping teachers enhance their educational experience through innovative technology solutions.",
+  },
+  {
     title: "Lead of Machine Learning & Data Analytics",
     company: "DotLabs",
     period: "2024 - Present",
@@ -93,7 +99,7 @@ export default function Experience() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-          years of delivering data-driven solutions and actionable insights for business growth.
+            years of delivering <strong>data-driven</strong> solutions and <strong>developing softwares</strong> for business growth.
           </p>
         </motion.div>
 

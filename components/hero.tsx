@@ -78,8 +78,9 @@ export default function Hero() {
               Husnain Sardar
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-              A Freelance Data Analyst with 3+ years of experience helping businesses thrive with data.
+              A Freelance <strong>Data Analyst</strong> and <strong>Software developer</strong> with <strong>3+ years</strong> of experience helping businesses thrive with data.
             </p>
+
           </motion.div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">

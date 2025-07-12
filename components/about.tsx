@@ -4,13 +4,13 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import {
   BarChart2,
-  Database,
   Brain,
   Code2,
   TableProperties,
-  FileSpreadsheet,
   PiIcon as Python,
   MessagesSquare,
+  Smartphone,
+  Bot,
 } from "lucide-react"
 
 const skills = [
@@ -20,19 +20,24 @@ const skills = [
     description: "for data visualization",
   },
   {
-    icon: Database,
-    title: "SQL",
-    description: "Structured Query Language",
-  },
-  {
-    icon: FileSpreadsheet,
-    title: "Microsoft Excel",
-    description: "Advanced Data Analysis",
-  },
-  {
     icon: Python,
-    title: "Pyhton & R",
+    title: "Python & R",
     description: "Python For Advanced EDA",
+  }, 
+  {
+    icon: Smartphone,
+    title: "Mobile App Development",
+    description: "React Native",
+  },
+  {
+    icon: Code2,
+    title: "MERN Stack",
+    description: "Full Stack Development",
+  },
+  {
+    icon: Bot,
+    title: "AI Agents",
+    description: "for automation",
   },
   {
     icon: Brain,
@@ -49,11 +54,6 @@ const skills = [
     title: "Chatbot Creation",
     description: "AI-Powered Conversations",
   },
-  {
-    icon: Code2,
-    title: "MERN Stack",
-    description: "Full Stack Development",
-  },
 ]
 
 export default function About() {
@@ -67,24 +67,30 @@ export default function About() {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-start">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="w-60 h-64 relative rounded-2xl overflow-hidden border-4 border-primary/10"
+              className="flex justify-center md:justify-end"
             >
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MyBnWPic.jpg-AuGDsNn7SdD3lgZlSS2w1iJw3pepyQ.jpeg"
-                alt="Profile Picture"
-                fill
-                className="object-cover object-[50%_20%]"
-                priority
-              />
+              <div className="w-60 h-64 relative rounded-2xl overflow-hidden border-4 border-primary/10 flex-shrink-0">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MyBnWPic.jpg-AuGDsNn7SdD3lgZlSS2w1iJw3pepyQ.jpeg"
+                  alt="Profile Picture"
+                  fill
+                  className="object-cover object-[50%_20%]"
+                  priority
+                />
+              </div>
             </motion.div>
-            <p className="text-lg text-muted-foreground text-left">
-            I'm a data analyst and software engineer passionate about transforming data into insights. Skilled in Power BI, Python, and software development, I build dashboards, clean data, and create efficient solutions to drive informed decisions.
-            </p>
+            <div className="flex items-center">
+              <p className="text-lg text-muted-foreground text-left">
+                  I'm a data analyst and software engineer passionate about transforming data into actionable insights.
+                  Skilled in Power BI, Python, and the MERN stack for  software development, I build dashboards, clean and analyze data, and develop full-stack web and mobile applications using React Native.
+                  I also work on AI automation solutions to streamline workflows and enable smarter, data-driven decision-making.
+              </p>
+            </div>
           </div>
         </motion.div>
 
@@ -106,17 +112,7 @@ export default function About() {
                   transition: { duration: 0.2 },
                 }}
               >
-                {skill.isDoubleIcon ? (
-                  <div className="flex items-center gap-2 w-full justify-center">
-                    {skill.icons?.map((icon, i) => (
-                      <div key={i} className="w-6 h-6 relative">
-                        <Image src={icon.src || "/placeholder.svg"} alt={icon.alt} fill className="object-contain" />
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <skill.icon className="w-6 h-6" />
-                )}
+                <skill.icon className="w-6 h-6" />
               </motion.div>
               <h3 className="text-xl font-semibold mb-2">{skill.title}</h3>
               <p className="text-muted-foreground">{skill.description}</p>
