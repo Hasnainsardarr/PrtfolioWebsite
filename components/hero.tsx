@@ -60,7 +60,7 @@ export default function Hero() {
           style={{
             minHeight: "100vh",
             backgroundColor: vantaFailed ? "transparent" : "#101013", // Show fallback only if failed
-            backgroundImage: vantaFailed ? "url('/portfoliobg.jpg')" : "none", 
+            backgroundImage: vantaFailed ? "url('/portfoliobg.jpg')" : "none",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -73,13 +73,14 @@ export default function Hero() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6 text-white">
-              Hello, I am  
+              Hello, I am
               <br />
               Husnain Sardar
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-              A Freelance <strong>Data Analyst</strong> and <strong>Software developer</strong> with <strong>3+ years</strong> of experience helping businesses thrive with data.
+              <strong>AI Engineer</strong> & <strong>Software Developer</strong> with <strong>4+</strong> years of experience in Machine Learning and Intelligent Agents.
             </p>
+
 
           </motion.div>
         </div>

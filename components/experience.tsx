@@ -13,7 +13,7 @@ const stats = [
   },
   {
     icon: Briefcase,
-    value: 3,
+    value: 4,
     label: "Years Experience",
     suffix: "+",
   },
@@ -98,9 +98,10 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            years of delivering <strong>data-driven</strong> solutions and <strong>developing softwares</strong> for business growth.
+          <p className="text-gray-300">
+            Years of building <strong>AI software solutions</strong> and <strong>machine learning models</strong> that have driven over <strong>$0.6M</strong> growth for businesses.
           </p>
+
         </motion.div>
 
         {/* Stats Section */}

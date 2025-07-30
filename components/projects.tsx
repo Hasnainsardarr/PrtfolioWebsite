@@ -29,10 +29,10 @@ const projects: Project[] = [
     },
     github: "https://github.com/Hasnainsardarr",
     demo: "https://github.com/Hasnainsardarr",
-    technologies: ["Power BI", "Web Scrapping", "Pandas","Power Query" , "DAX"],
+    technologies: ["Power BI", "Web Scrapping", "Pandas", "Power Query", "DAX"],
   },
   {
-    title: "Prepium",
+    title: "Prepium AI",
     description: "An all-in-one medical exam preparation platform offering mock exams, study notes, bookmarks, flashcards, and an AI-powered chatbot to assist learners in their journey.",
     media: {
       type: "gif",
@@ -40,12 +40,12 @@ const projects: Project[] = [
     },
     github: "https://github.com/Hasnainsardarr",
     demo: "https://www.prepium.org/",
-     
-    technologies: ["Next.js", "React Native", "AI Chatbot","Redux" , "Stripe"],
+
+    technologies: ["Next.js", "React Native", "AI Chatbot", "Redux", "Stripe"],
   },
-  
+
   {
-    title: "ApneaGuard",
+    title: "ApneaGuard AI",
     description: "A machine learning-powered mobile application designed to detect sleep apnea using heart rate and SpO₂ data from smartwatches.",
     media: {
       type: "gif",
@@ -53,8 +53,8 @@ const projects: Project[] = [
     },
     github: "https://github.com/Hasnainsardarr",
     demo: "https://apneaguard.vercel.app/",
-     
-    technologies: ["Next.js", "React Native","Supabase" , "AWS",  " Scikit-learn", "NumPy", " Matplotlib", "Buisinees Intelligence"],
+
+    technologies: ["Next.js", "React Native", "Supabase", "AWS", " Scikit-learn", "NumPy", " Matplotlib", "Buisinees Intelligence"],
   },
 
   {
@@ -66,9 +66,55 @@ const projects: Project[] = [
     },
     github: "https://github.com/Hasnainsardarr",
     demo: "https://www.madaddgar.com/",
-     
+
     technologies: ["EJS", "React", "Node.js", "REST API", "Socket.io", "Redux"],
   },
+  {
+    title: "AI-Powered Accent Training System",
+    description: "Built a custom accent training system for Ace1t.com using Microsoft Speech API and ElevenLabs. The tool analyzes spoken English, evaluates pronunciation and fluency, and provides real-time voice feedback to help users improve their accent.",
+    media: {
+      type: "gif",
+      url: "/projects/gifs/speechgiff.gif", // Replace with your actual media path
+    },
+    github: "https://github.com/Hasnainsardarr", // Update with specific repo if available
+    demo: "https://ace1t.com", // Or direct demo link if applicable
+    technologies: ["Python", "Microsoft Speech API", "ElevenLabs", "FastAPI", "Speech Recognition"],
+  },
+  {
+    title: "LLM-Based Automation System for Message Routing",
+    description: "Built an AI-powered workflow using n8n, OpenAI, and Google Sheets to automate message processing, intelligent task routing, and real-time response handling through autonomous agents.",
+    media: {
+      type: "image",
+      url: "/projects/images/1flow.jpg", // Replace with your actual media path
+    },
+    github: "https://github.com/Hasnainsardarr", // Update if you have a repo for it
+    demo: "", // Add live demo or video link if available
+    technologies: ["n8n", "OpenAI API", "JavaScript", "Webhooks", "Google Sheets"],
+  },
+  {
+    title: "Instagram Follower Scraper Automation",
+    description: "Created an automated workflow using n8n to collect Instagram follower data via an external API and log the results into Google Sheets. Includes dynamic looping, status polling, and timed waits for asynchronous data retrieval.",
+    media: {
+      type: "image",
+      url: "/projects/images/2flow.jpg", // Replace with your actual media path
+    },
+    github: "https://github.com/Hasnainsardarr", // Update if there's a repo
+    demo: "", // Add if you have a public-facing version or demo video
+    technologies: ["n8n", "HTTP API", "Google Sheets", "Automation", "JavaScript", "Instagram"],
+  },
+  {
+    title: "Automated AI Article Generator",
+    description: "Designed an AI-driven content generation system using n8n and OpenAI. It automates writing workflows from Airtable metadata, outlines creation, multi-agent drafting, and personalized article assembly, enabling scalable, high-quality content production.",
+    media: {
+      type: "image",
+      url: "/projects/images/3flow.jpg", // Replace with your actual media path
+    },
+    github: "https://github.com/Hasnainsardarr", // Add repo if public
+    demo: "", // Include if you have a demo or video
+    technologies: ["n8n", "OpenAI", "Airtable", "JavaScript", "Content Automation"],
+  },      
+
+
   {
     title: "Atliq Hardware Sales Insights Dashboard",
     description: "Analyzed Atliq Hardware sales with Power BI, uncovering trends, regional performance, customer behavior, and top/bottom products for data-driven decisions.",
@@ -78,7 +124,7 @@ const projects: Project[] = [
     },
     github: "https://github.com/Hasnainsardarr",
     demo: "https://app.powerbi.com/view?r=eyJrIjoiNzQ5NGJkZjUtNzU5Ni00ZjU3LWE4MzMtNzA4ZGJlMDQxZjQ2IiwidCI6IjM1NzJkNGE5LTcxNGQtNGMxNS05NzI5LTg1NzY5NGM1MzI5YiIsImMiOjh9",
-     
+
     technologies: ["Python", "DAX", " Power BI", "Buisinees Intelligence"],
   },
   {
@@ -90,8 +136,8 @@ const projects: Project[] = [
     },
     github: "https://github.com/Hasnainsardarr/ASK_WEB_AI",
     demo: "https://askwebai.vercel.app/",
- 
-    technologies: ["Next.js 14", "Meta-Llama-3-8B-Instruct", "Vercel AI SDK", "RAG"],
+
+    technologies: ["FastAPI", "Meta-Llama-3-8B-Instruct", "LangChain", "RAG", "FAISS", "Vector Embeddings"],
   },
   {
     title: "Machine Learning Based Home Price Prediction",
@@ -104,78 +150,7 @@ const projects: Project[] = [
     demo: "http://13.127.81.177:8080/",
     technologies: ["Flask", "AWS", "Scikit-learn", "Pandas"],
   },
-  {
-    title: "Full-Stack Restaurant Website with MERN Stack",
-    description: "A fully functional restaurant website built with MongoDB, Express.js, React.js, and Node.js. It features seamless frontend-backend integration, Firebase authentication, JWT-based access control, an admin panel, payment processing, image hosting, and online food ordering.",
-    media: {
-      type: "gif",
-      url: "/projects/gifs/foodiigif.gif ", // Replace with your image path
-    },
-    github: "https://github.com/Hasnainsardarr/EatBuddy",
-    demo: "https://eatbuddy.vercel.app/",
-     
-    technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Firebase","JWT","React Context API / Redux "],
-  },
-  {
-    title: "Super Store Data Analysis Dashboard",
-    description: "In this client project, I developed a Power BI dashboard to analyze the sales performance of a super store, revealing that the West region leads with 31.58% of total sales, followed closely by the East. This analysis provided actionable insights that support informed business strategies.",
-    media: {
-      type: "image",
-      url: "/projects/images/superstore.jpg", // Replace with your GIF path
-    },
-    github: "https://github.com/Hasnainsardarr",
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiMzIwNzc4NzMtNzNlMy00ZmU4LWE4MGEtNTU1NjNhNzY2ZjEyIiwidCI6IjM1NzJkNGE5LTcxNGQtNGMxNS05NzI5LTg1NzY5NGM1MzI5YiIsImMiOjh9",
- 
-    technologies: ["Excel", "Power BI", "DAX" ],
-  },
-  {
-    title: "Vrinda Store Sales Dashboard",
-    description: "In this client project, I developed a comprehensive sales dashboard for Vrinda Store using Excel to analyze and visualize online sales data. The dashboard features interactive charts and graphs for real-time tracking of key performance metrics, sales trends, and customer behavior.",
-    media: {
-      type: "image",
-      url: "/projects/images/store.jpg", // Replace with your GIF path
-    },
-    github: "https://github.com/Hasnainsardarr",
-    demo: "https://github.com/Hasnainsardarr",
- 
-    technologies: ["Excel", "Power BI", "DAX" ],
-  },
-  {
-    title: "QBCC Data Web Scraping",
-    description: "In this client project, I developed a web scraping tool using Python and libraries like Beautiful Soup to extract data from the QBCC website for local contractors. This automated solution streamlined the collection of contractor details and licensing status, helping make effective decision.",
-    media: {
-      type: "image",
-      url: "/projects/images/qbcc.png", // Replace with your GIF path
-    },
-    github: "https://github.com/Hasnainsardarr/DataScrapper-forContractersData",
-    demo: "https://github.com/Hasnainsardarr/DataScrapper-forContractersData",
- 
-    technologies: ["Beautiful Soup", "Pandas", "API Handling:" ],
-  },
-  {
-    title: "Shopify Data Scraping",
-    description: "In this client project, I developed a web scraping application using Python and libraries like Scrapy and Selenium to gather data from Shopify stores. The tool focused on extracting product listings, customer reviews, and sales trends, enabling the client to perform competitive and make decisions.",
-    media: {
-      type: "image",
-      url: "/projects/images/shopify.jpg", // Replace with your GIF path
-    },
-    github: "https://github.com/Hasnainsardarr/Shopify-data-scrapping",
-    demo: "https://github.com/Hasnainsardarr/Shopify-data-scrapping",
- 
-    technologies: ["Beautiful Soup", "Pandas", "API Handling:" ],
-  },
-  {
-    title: "Crypto Dashboard",
-    description: "A fully dynamic crypto dashboard built with React and Chakra UI, providing real-time cryptocurrency data, interactive charts, and market trends. Features include price tracking, historical data visualization, and a user-friendly interface for seamless navigation.",
-    media: {
-      type: "gif",
-      url: "/projects/gifs/cryptogif.gif ", // Replace with your image path
-    },
-    github: "https://github.com/Hasnainsardarr/ReactWorks/tree/main/Cryptoapp/project-6",
-    demo: "https://cryptodashboard-react.vercel.app/",
-     
-    technologies: ["React.js", "Chakra UI", "Data Visualization", "Recharts"],
-  },
+  
 ]
 
 export default function Projects() {
@@ -213,9 +188,8 @@ export default function Projects() {
                   src={project.media.url || "/placeholder.svg"}
                   alt={project.title}
                   fill
-                  className={`object-cover transition-all duration-300 group-hover:scale-105 ${
-                    isImageLoading ? "opacity-0" : "opacity-100"
-                  }`}
+                  className={`object-cover transition-all duration-300 group-hover:scale-105 ${isImageLoading ? "opacity-0" : "opacity-100"
+                    }`}
                   onLoadingComplete={() => setIsImageLoading(false)}
                   unoptimized={project.media.type === "gif"}
                   priority={index < 3}

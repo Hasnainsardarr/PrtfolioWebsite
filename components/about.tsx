@@ -12,49 +12,54 @@ import {
   Smartphone,
   Bot,
 } from "lucide-react"
-
 const skills = [
   {
-    icon: BarChart2,
-    title: "Power BI and Tableau",
-    description: "for data visualization",
+    icon: Bot,
+    title: "LLM Agents",
+    description: "Autonomous Task-Solving Systems",
   },
   {
-    icon: Python,
-    title: "Python & R",
-    description: "Python For Advanced EDA",
-  }, 
+    icon: Brain,
+    title: "AI & Machine Learning",
+    description: "Applied ML & Predictive Modeling",
+  },
   {
-    icon: Smartphone,
-    title: "Mobile App Development",
-    description: "React Native",
+    icon: MessagesSquare,
+    title: "Chatbots & Voice Agents",
+    description: "By LLM Providers",
+  },
+  {
+    icon: BarChart2,
+    title: "Data Analytics",
+    description: "Power BI, Python, SQL, DBT",
   },
   {
     icon: Code2,
     title: "MERN Stack",
-    description: "Full Stack Development",
+    description: "Web & Backend Development",
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile Development",
+    description: "React Native Apps",
+  },
+  {
+    icon: TableProperties,
+    title: "Retrieval-Augmented Generation (RAG)",
+    description: "LangChain, Vector DBs, Custom Knowledge",
+  },
+  {
+    icon: Brain,
+    title: "Hugging Face Transformers",
+    description: "NLP Models & Pipelines",
   },
   {
     icon: Bot,
     title: "AI Agents",
-    description: "for automation",
-  },
-  {
-    icon: Brain,
-    title: "Machine Learning",
-    description: "AI & Predictive Modeling",
-  },
-  {
-    icon: TableProperties,
-    title: "Data Scraping",
-    description: "Web Data Extraction",
-  },
-  {
-    icon: MessagesSquare,
-    title: "Chatbot Creation",
-    description: "AI-Powered Conversations",
+    description: "n8n, Memory, Tool Use",
   },
 ]
+
 
 export default function About() {
   return (
@@ -86,10 +91,9 @@ export default function About() {
             </motion.div>
             <div className="flex items-center">
               <p className="text-lg text-muted-foreground text-left">
-                  I'm a data analyst and software engineer passionate about transforming data into actionable insights.
-                  Skilled in Power BI, Python, and the MERN stack for  software development, I build dashboards, clean and analyze data, and develop full-stack web and mobile applications using React Native.
-                  I also work on AI automation solutions to streamline workflows and enable smarter, data-driven decision-making.
+                I'm an <strong>AI Engineer</strong> with experience designing and deploying <strong>LLM-based AI Agents</strong>, <strong>multi-agent collaboration systems</strong>, and <strong>autonomous task-solving pipelines</strong>. My work focuses on bridging <strong>cutting-edge research</strong> with practical applications ranging from workflow automation, data reasoning, to voice-activated agents.
               </p>
+
             </div>
           </div>
         </motion.div>
