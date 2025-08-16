@@ -20,17 +20,7 @@ type Project = {
 }
 
 const projects: Project[] = [
-  {
-    title: "T20 World Cup 2022 Analytics",
-    description: "Analyzed T20 World Cup 2022 data from ESPN Cricinfo, using Python, Pandas, and Power Query for cleaning and transformation. Developed a Power BI dashboard with dynamic insights and player selection based on performance metrics.",
-    media: {
-      type: "gif",
-      url: "/projects/gifs/t20.gif", // Replace with your GIF path
-    },
-    github: "https://github.com/Hasnainsardarr",
-    demo: "https://github.com/Hasnainsardarr",
-    technologies: ["Power BI", "Web Scrapping", "Pandas", "Power Query", "DAX"],
-  },
+ 
   {
     title: "Prepium AI",
     description: "An all-in-one medical exam preparation platform offering mock exams, study notes, bookmarks, flashcards, and an AI-powered chatbot to assist learners in their journey.",
@@ -68,6 +58,17 @@ const projects: Project[] = [
     demo: "https://www.madaddgar.com/",
 
     technologies: ["EJS", "React", "Node.js", "REST API", "Socket.io", "Redux"],
+  },
+  {
+    title: "Log Classification System (Hybrid AI Pipeline)",
+    description: "Developed a GenAI and ML-powered system for automated log classification. The hybrid pipeline integrates BERT + Logistic Regression, Regex, and LLMs to classify log messages. Implemented DBSCAN clustering to uncover prominent regex patterns and deliver insights into log data.",
+    media: {
+      type: "image",
+      url: "/projects/images/LogClassification.png", // Replace with your actual media path
+    },
+    github: "https://github.com/Hasnainsardarr/GenAI-Log-Classification-System", // Replace with exact repo link
+    demo: "", // Add demo link if you deploy it
+    technologies: ["Python", "FastAPI", "scikit-learn", "BERT", "Regex", "LLMs", "DBSCAN", "Sentence-transformers"],
   },
   {
     title: "AI-Powered Accent Training System",
@@ -115,18 +116,7 @@ const projects: Project[] = [
   },      
 
 
-  {
-    title: "Atliq Hardware Sales Insights Dashboard",
-    description: "Analyzed Atliq Hardware sales with Power BI, uncovering trends, regional performance, customer behavior, and top/bottom products for data-driven decisions.",
-    media: {
-      type: "gif",
-      url: "/projects/gifs/atliqPBI.gif", // Replace with your GIF path
-    },
-    github: "https://github.com/Hasnainsardarr",
-    demo: "https://app.powerbi.com/view?r=eyJrIjoiNzQ5NGJkZjUtNzU5Ni00ZjU3LWE4MzMtNzA4ZGJlMDQxZjQ2IiwidCI6IjM1NzJkNGE5LTcxNGQtNGMxNS05NzI5LTg1NzY5NGM1MzI5YiIsImMiOjh9",
-
-    technologies: ["Python", "DAX", " Power BI", "Buisinees Intelligence"],
-  },
+  
   {
     title: "AskWebAI Chatbot",
     description: "Built AskWebAI, a Next.js 14 chatbot leveraging Meta-Llama-3-8B-Instruct for dynamic, AI-powered website interactions.",
@@ -150,13 +140,36 @@ const projects: Project[] = [
     demo: "http://13.127.81.177:8080/",
     technologies: ["Flask", "AWS", "Scikit-learn", "Pandas"],
   },
+  {
+    title: "Atliq Hardware Sales Insights Dashboard",
+    description: "Analyzed Atliq Hardware sales with Power BI, uncovering trends, regional performance, customer behavior, and top/bottom products for data-driven decisions.",
+    media: {
+      type: "gif",
+      url: "/projects/gifs/atliqPBI.gif", // Replace with your GIF path
+    },
+    github: "https://github.com/Hasnainsardarr",
+    demo: "https://app.powerbi.com/view?r=eyJrIjoiNzQ5NGJkZjUtNzU5Ni00ZjU3LWE4MzMtNzA4ZGJlMDQxZjQ2IiwidCI6IjM1NzJkNGE5LTcxNGQtNGMxNS05NzI5LTg1NzY5NGM1MzI5YiIsImMiOjh9",
+
+    technologies: ["Python", "DAX", " Power BI", "Buisinees Intelligence"],
+  },
+  {
+    title: "T20 World Cup 2022 Analytics",
+    description: "Analyzed T20 World Cup 2022 data from ESPN Cricinfo, using Python, Pandas, and Power Query for cleaning and transformation. Developed a Power BI dashboard with dynamic insights and player selection based on performance metrics.",
+    media: {
+      type: "gif",
+      url: "/projects/gifs/t20.gif", // Replace with your GIF path
+    },
+    github: "https://github.com/Hasnainsardarr",
+    demo: "https://github.com/Hasnainsardarr",
+    technologies: ["Power BI", "Web Scrapping", "Pandas", "Power Query", "DAX"],
+  },
   
 ]
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false)
   const [isImageLoading, setIsImageLoading] = useState(true)
-  const displayedProjects = showAll ? projects : projects.slice(0, 5)
+  const displayedProjects = showAll ? projects : projects.slice(0, 6)
 
   return (
     <section id="projects" className="py-20 bg-muted/50">
