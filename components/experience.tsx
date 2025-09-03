@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useEffect, useRef, useState } from "react"
-import { motion, useInView } from "framer-motion"
-import { BadgeCheck, Briefcase, Users, Award } from "lucide-react"
+import { useEffect, useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { BadgeCheck, Briefcase, Users, Award } from "lucide-react";
 
 const stats = [
   {
@@ -23,20 +23,30 @@ const stats = [
     label: "Certifications",
     suffix: "+",
   },
-]
+];
 
 const experiences = [
+  {
+    title: "AI Engineer",
+    company: "DotLabs",
+    period: "Jun 2025 - Present",
+    description:
+      "Working as an AI Engineer, building end-to-end AI solutions including Retrieval-Augmented Generation (RAG) systems, chatbot development, and model integration. Contributed to projects involving LangChain, LangGraph, multimodal embeddings, and backend engineering to deliver production-ready AI applications.",
+  },
+
   {
     title: "Frontend Engineer",
     company: "GoManzanas",
     period: "Jan 2025 - Jun 2025",
-    description: "Worked remotely as a full-time frontend engineer for a US-based company, developing ace1t.com - an AI-powered platform helping teachers enhance their educational experience through innovative technology solutions.",
+    description:
+      "Worked remotely as a full-time frontend engineer for a US-based company, developing ace1t.com - an AI-powered platform helping teachers enhance their educational experience through innovative technology solutions.",
   },
   {
     title: "Lead of Machine Learning & Data Analytics",
     company: "DotLabs",
     period: "2024 - Present",
-    description: "Leading machine learning and data analytics initiatives, developing advanced models,visualizations , and driving data-driven strategies for business growth.",
+    description:
+      "Leading machine learning and data analytics initiatives, developing advanced models,visualizations , and driving data-driven strategies for business growth.",
   },
   // {
   //   title: "Senior Data Analyst",
@@ -48,45 +58,56 @@ const experiences = [
     title: "Freelance Data Analyst",
     company: "Self-Employed",
     period: "2023 - Present",
-    description: "Collaborated with multiple clients worldwide, delivering data-driven solutions, dashboard development, and predictive analytics to enhance decision-making.",
+    description:
+      "Collaborated with multiple clients worldwide, delivering data-driven solutions, dashboard development, and predictive analytics to enhance decision-making.",
   },
   {
     title: "Junior Data Analyst",
     company: "DevComs",
     period: "2022 - 2023",
-    description: "Assisted in data processing, report generation, and visualization, supporting business intelligence and strategic decision-making.",
+    description:
+      "Assisted in data processing, report generation, and visualization, supporting business intelligence and strategic decision-making.",
   },
 ];
 
-
-function CountUpNumber({ target, inView }: { target: number; inView: boolean }) {
-  const [count, setCount] = useState(0)
-  const countRef = useRef(0)
-  const countUpDuration = 2000 // 2 seconds
-  const framesPerSecond = 60
-  const incrementPerFrame = target / ((countUpDuration / 1000) * framesPerSecond)
+function CountUpNumber({
+  target,
+  inView,
+}: {
+  target: number;
+  inView: boolean;
+}) {
+  const [count, setCount] = useState(0);
+  const countRef = useRef(0);
+  const countUpDuration = 2000; // 2 seconds
+  const framesPerSecond = 60;
+  const incrementPerFrame =
+    target / ((countUpDuration / 1000) * framesPerSecond);
 
   useEffect(() => {
     if (inView) {
       const interval = setInterval(() => {
         if (countRef.current < target) {
-          countRef.current = Math.min(countRef.current + incrementPerFrame, target)
-          setCount(Math.floor(countRef.current))
+          countRef.current = Math.min(
+            countRef.current + incrementPerFrame,
+            target
+          );
+          setCount(Math.floor(countRef.current));
         } else {
-          clearInterval(interval)
+          clearInterval(interval);
         }
-      }, 1000 / framesPerSecond)
+      }, 1000 / framesPerSecond);
 
-      return () => clearInterval(interval)
+      return () => clearInterval(interval);
     }
-  }, [inView, target, incrementPerFrame])
+  }, [inView, target, incrementPerFrame]);
 
-  return <>{count}</>
+  return <>{count}</>;
 }
 
 export default function Experience() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section id="experience" className="py-20">
@@ -99,9 +120,10 @@ export default function Experience() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
           <p className="text-gray-300">
-            Years of building <strong>AI software solutions</strong> and <strong>machine learning models</strong> that have driven over <strong>$0.6M</strong> growth for businesses.
+            Years of building <strong>AI software solutions</strong> and{" "}
+            <strong>machine learning models</strong> that have driven over{" "}
+            <strong>$0.6M</strong> growth for businesses.
           </p>
-
         </motion.div>
 
         {/* Stats Section */}
@@ -152,13 +174,14 @@ export default function Experience() {
                 <div className="text-sm text-muted-foreground">
                   {experience.company} • {experience.period}
                 </div>
-                <p className="text-muted-foreground">{experience.description}</p>
+                <p className="text-muted-foreground">
+                  {experience.description}
+                </p>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-
