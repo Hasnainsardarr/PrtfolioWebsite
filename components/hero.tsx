@@ -1,18 +1,25 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
-import Script from "next/script"
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import Script from "next/script";
 
 export default function Hero() {
-  const vantaRef = useRef<HTMLDivElement>(null)
-  const [threeLoaded, setThreeLoaded] = useState(false)
-  const [vantaLoaded, setVantaLoaded] = useState(false)
-  const [vantaEffect, setVantaEffect] = useState<any>(null)
-  const [vantaFailed, setVantaFailed] = useState(false) // Track failure state
+  const vantaRef = useRef<HTMLDivElement>(null);
+  const [threeLoaded, setThreeLoaded] = useState(false);
+  const [vantaLoaded, setVantaLoaded] = useState(false);
+  const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const [vantaFailed, setVantaFailed] = useState(false); // Track failure state
 
   useEffect(() => {
-    if (!threeLoaded || !vantaLoaded || !vantaRef.current || vantaEffect || vantaFailed) return
+    if (
+      !threeLoaded ||
+      !vantaLoaded ||
+      !vantaRef.current ||
+      vantaEffect ||
+      vantaFailed
+    )
+      return;
 
     try {
       // @ts-ignore
@@ -29,18 +36,18 @@ export default function Hero() {
         waveHeight: 20.0,
         waveSpeed: 0.75,
         zoom: 0.75,
-      })
+      });
 
-      setVantaEffect(effect)
+      setVantaEffect(effect);
     } catch (error) {
-      console.error("Failed to initialize Vanta effect:", error)
-      setVantaFailed(true) // If error occurs, show fallback image
+      console.error("Failed to initialize Vanta effect:", error);
+      setVantaFailed(true); // If error occurs, show fallback image
     }
 
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
-    }
-  }, [threeLoaded, vantaLoaded, vantaEffect, vantaFailed])
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [threeLoaded, vantaLoaded, vantaEffect, vantaFailed]);
 
   return (
     <>
@@ -78,10 +85,10 @@ export default function Hero() {
               Husnain Sardar
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-              <strong>AI Engineer</strong> & <strong>Software Developer</strong> with <strong>4+</strong> years of experience in Machine Learning and Intelligent Agents.
+              <strong>AI Engineer</strong> & <strong>Software Developer</strong>{" "}
+              with <strong>4+</strong> years of experience in Intelligent Agents
+              and Production Scale Apps.
             </p>
-
-
           </motion.div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
@@ -95,5 +102,5 @@ export default function Hero() {
         </div>
       </section>
     </>
-  )
+  );
 }
