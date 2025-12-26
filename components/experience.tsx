@@ -13,7 +13,7 @@ const stats = [
   },
   {
     icon: Briefcase,
-    value: 4,
+    value: 2,
     label: "Years Experience",
     suffix: "+",
   },
@@ -35,19 +35,19 @@ const experiences = [
   },
 
   {
-    title: "Frontend Engineer",
+    title: "Full Stack Developer",
     company: "GoManzanas",
     period: "Jan 2025 - Jun 2025",
     description:
       "Worked remotely as a full-time frontend engineer for a US-based company, developing ace1t.com - an AI-powered platform helping teachers enhance their educational experience through innovative technology solutions.",
   },
-  {
-    title: "Lead of Machine Learning & Data Analytics",
-    company: "DotLabs",
-    period: "2024 - Present",
-    description:
-      "Leading machine learning and data analytics initiatives, developing advanced models,visualizations , and driving data-driven strategies for business growth.",
-  },
+  // {
+  //   title: "Lead of Machine Learning & AI team",
+  //   company: "DotLabs",
+  //   period: "2024 - Present",
+  //   description:
+  //     "Leading machine learning and AI initiatives, developing advanced models, RAG, and driving data-driven strategies for business growth.",
+  // },
   // {
   //   title: "Senior Data Analyst",
   //   company: "Tech Company",
@@ -55,19 +55,19 @@ const experiences = [
   //   description: "Provided deep analytical insights, built data pipelines, and optimized business processes through advanced data modeling and visualization.",
   // },
   {
-    title: "Freelance Data Analyst",
+    title: "Freelance Full Stack AI Engineer",
     company: "Self-Employed",
     period: "2023 - Present",
     description:
       "Collaborated with multiple clients worldwide, delivering data-driven solutions, dashboard development, and predictive analytics to enhance decision-making.",
   },
-  {
-    title: "Junior Data Analyst",
-    company: "DevComs",
-    period: "2022 - 2023",
-    description:
-      "Assisted in data processing, report generation, and visualization, supporting business intelligence and strategic decision-making.",
-  },
+  // {
+  //   title: "Junior Data Analyst",
+  //   company: "DevComs",
+  //   period: "2022 - 2023",
+  //   description:
+  //     "Assisted in data processing, report generation, and visualization, supporting business intelligence and strategic decision-making.",
+  // },
 ];
 
 function CountUpNumber({

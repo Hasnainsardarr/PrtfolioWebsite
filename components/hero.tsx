@@ -86,7 +86,7 @@ export default function Hero() {
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
               <strong>AI Engineer</strong> & <strong>Full-Stack Developer</strong>{" "}
-              with <strong>4+</strong> years of experience in Intelligent Agents
+              with years of experience in Intelligent Agents
               and Production Scale Apps.
             </p>
           </motion.div>

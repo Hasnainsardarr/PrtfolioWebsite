@@ -78,30 +78,30 @@ export default function Contact() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
-              <div>
+              {/* <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <p className="text-muted-foreground">husnainsardar07@gmail.com</p>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex items-center gap-4 p-4 rounded-lg bg-background/50 backdrop-blur-sm">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
-              <div>
+              {/* <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
                 <p className="text-muted-foreground">+923004567531</p>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex items-center gap-4 p-4 rounded-lg bg-background/50 backdrop-blur-sm">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
-              <div>
+              {/* <div>
                 <h3 className="font-semibold text-lg">Location</h3>
                 <p className="text-muted-foreground">Lahore, Pakistan</p>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
