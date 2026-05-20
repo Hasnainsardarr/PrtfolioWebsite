@@ -20,10 +20,10 @@ type Project = {
 }
 
 const projects: Project[] = [
- 
   {
     title: "Prepium AI",
-    description: "An all-in-one medical exam preparation platform offering mock exams, study notes, bookmarks, flashcards, and an AI-powered chatbot to assist learners in their journey.",
+    description:
+      "An all in one medical exam preparation platform offering mock exams, study notes, bookmarks, flashcards, and an AI-powered chatbot to assist learners in their journey.",
     media: {
       type: "gif",
       url: "/projects/images/prepiumProject.png", // Replace with your GIF path
@@ -36,7 +36,8 @@ const projects: Project[] = [
 
   {
     title: "ApneaGuard AI",
-    description: "A machine learning-powered mobile application designed to detect sleep apnea using heart rate and SpO₂ data from smartwatches.",
+    description:
+      "A machine learning powered mobile application designed to detect sleep apnea using heart rate and SpO₂ data from smartwatches.",
     media: {
       type: "gif",
       url: "/projects/images/ApneamockupsSS.png", // Replace with your GIF path
@@ -44,12 +45,22 @@ const projects: Project[] = [
     github: "https://github.com/Hasnainsardarr",
     demo: "https://apneaguard.vercel.app/",
 
-    technologies: ["Next.js", "React Native", "Supabase", "AWS", " Scikit-learn", "NumPy", " Matplotlib", "Buisinees Intelligence"],
+    technologies: [
+      "Next.js",
+      "React Native",
+      "Supabase",
+      "AWS",
+      " Scikit-learn",
+      "NumPy",
+      " Matplotlib",
+      "Buisinees Intelligence",
+    ],
   },
 
   {
     title: "MadaddGar",
-    description: "A multi-vendor home service platform that enables users to book services while allowing multiple companies to bid on service requests. The system facilitates seamless service management with real-time updates and secure transactions.",
+    description:
+      "A multi vendor home service platform that enables users to book services while allowing multiple companies to bid on service requests. The system facilitates seamless service management with real-time updates and secure transactions.",
     media: {
       type: "gif",
       url: "/projects/images/madaddgarProject.png", // Replace with your GIF path
@@ -61,65 +72,115 @@ const projects: Project[] = [
   },
   {
     title: "Log Classification System (Hybrid AI Pipeline)",
-    description: "Developed a GenAI and ML-powered system for automated log classification. The hybrid pipeline integrates BERT + Logistic Regression, Regex, and LLMs to classify log messages. Implemented DBSCAN clustering to uncover prominent regex patterns and deliver insights into log data.",
+    description:
+      "Developed a GenAI and ML powered system for automated log classification. The hybrid pipeline integrates BERT + Logistic Regression, Regex, and LLMs to classify log messages. Implemented DBSCAN clustering to uncover prominent regex patterns and deliver insights into log data.",
     media: {
       type: "image",
       url: "/projects/images/LogClassification.png", // Replace with your actual media path
     },
     github: "https://github.com/Hasnainsardarr/GenAI-Log-Classification-System", // Replace with exact repo link
     demo: "", // Add demo link if you deploy it
-    technologies: ["Python", "FastAPI", "scikit-learn", "BERT", "Regex", "LLMs", "DBSCAN", "Sentence-transformers"],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "scikit-learn",
+      "BERT",
+      "Regex",
+      "LLMs",
+      "DBSCAN",
+      "Sentence-transformers",
+    ],
   },
   {
     title: "AI-Powered Accent Training System",
-    description: "Built a custom accent training system for Ace1t.com using Microsoft Speech API and ElevenLabs. The tool analyzes spoken English, evaluates pronunciation and fluency, and provides real-time voice feedback to help users improve their accent.",
+    description:
+      "Built a custom accent training system for Ace1t.com using Microsoft Speech API and ElevenLabs. The tool analyzes spoken English, evaluates pronunciation and fluency, and provides real-time voice feedback to help users improve their accent.",
     media: {
       type: "gif",
       url: "/projects/gifs/speechgiff.gif", // Replace with your actual media path
     },
     github: "https://github.com/Hasnainsardarr", // Update with specific repo if available
     demo: "https://ace1t.com", // Or direct demo link if applicable
-    technologies: ["Python", "Microsoft Speech API", "ElevenLabs", "FastAPI", "Speech Recognition"],
+    technologies: [
+      "Python",
+      "Microsoft Speech API",
+      "ElevenLabs",
+      "FastAPI",
+      "Speech Recognition",
+    ],
+  },
+  {
+    title: "CASS",
+    description:
+      "Built CASS for Intelligentvelocity.com, an AI powered assistant system that helps sales reps improve sales positioning with smarter context, insights, and response guidance.",
+    media: {
+      type: "image",
+      url: "/projects/images/Cass.png ", // Replace with your image path
+    },
+    github: "https://github.com/Hasnainsardarr/",
+    demo: "https://intelligentvelocity.com/",
+    technologies: ["LLM", "RAG", "Prompt Engineering"],
   },
   {
     title: "LLM-Based Automation System for Message Routing",
-    description: "Built an AI-powered workflow using n8n, OpenAI, and Google Sheets to automate message processing, intelligent task routing, and real-time response handling through autonomous agents.",
+    description:
+      "Built an AI-powered workflow using n8n, OpenAI, and Google Sheets to automate message processing, intelligent task routing, and real-time response handling through autonomous agents.",
     media: {
       type: "image",
       url: "/projects/images/1flow.jpg", // Replace with your actual media path
     },
     github: "https://github.com/Hasnainsardarr", // Update if you have a repo for it
     demo: "", // Add live demo or video link if available
-    technologies: ["n8n", "OpenAI API", "JavaScript", "Webhooks", "Google Sheets"],
+    technologies: [
+      "n8n",
+      "OpenAI API",
+      "JavaScript",
+      "Webhooks",
+      "Google Sheets",
+    ],
   },
   {
     title: "Instagram Follower Scraper Automation",
-    description: "Created an automated workflow using n8n to collect Instagram follower data via an external API and log the results into Google Sheets. Includes dynamic looping, status polling, and timed waits for asynchronous data retrieval.",
+    description:
+      "Created an automated workflow using n8n to collect Instagram follower data via an external API and log the results into Google Sheets. Includes dynamic looping, status polling, and timed waits for asynchronous data retrieval.",
     media: {
       type: "image",
       url: "/projects/images/2flow.jpg", // Replace with your actual media path
     },
     github: "https://github.com/Hasnainsardarr", // Update if there's a repo
     demo: "", // Add if you have a public-facing version or demo video
-    technologies: ["n8n", "HTTP API", "Google Sheets", "Automation", "JavaScript", "Instagram"],
+    technologies: [
+      "n8n",
+      "HTTP API",
+      "Google Sheets",
+      "Automation",
+      "JavaScript",
+      "Instagram",
+    ],
   },
   {
     title: "Automated AI Article Generator",
-    description: "Designed an AI-driven content generation system using n8n and OpenAI. It automates writing workflows from Airtable metadata, outlines creation, multi-agent drafting, and personalized article assembly, enabling scalable, high-quality content production.",
+    description:
+      "Designed an AI-driven content generation system using n8n and OpenAI. It automates writing workflows from Airtable metadata, outlines creation, multi-agent drafting, and personalized article assembly, enabling scalable, high-quality content production.",
     media: {
       type: "image",
       url: "/projects/images/3flow.jpg", // Replace with your actual media path
     },
     github: "https://github.com/Hasnainsardarr", // Add repo if public
     demo: "", // Include if you have a demo or video
-    technologies: ["n8n", "OpenAI", "Airtable", "JavaScript", "Content Automation"],
-  },      
+    technologies: [
+      "n8n",
+      "OpenAI",
+      "Airtable",
+      "JavaScript",
+      "Content Automation",
+    ],
+  },
 
-
-  
   {
     title: "AskWebAI Chatbot",
-    description: "Built AskWebAI, a Next.js 14 chatbot leveraging Meta-Llama-3-8B-Instruct for dynamic, AI-powered website interactions.",
+    description:
+      "Built AskWebAI, a Next.js 14 chatbot leveraging Meta-Llama-3-8B-Instruct for dynamic, AI-powered website interactions.",
     media: {
       type: "gif",
       url: "/projects/gifs/chatbotgif.gif", // Replace with your GIF path
@@ -127,22 +188,20 @@ const projects: Project[] = [
     github: "https://github.com/Hasnainsardarr/ASK_WEB_AI",
     demo: "https://askwebai.vercel.app/",
 
-    technologies: ["FastAPI", "Meta-Llama-3-8B-Instruct", "LangChain", "RAG", "FAISS", "Vector Embeddings"],
+    technologies: [
+      "FastAPI",
+      "Meta-Llama-3-8B-Instruct",
+      "LangChain",
+      "RAG",
+      "FAISS",
+      "Vector Embeddings",
+    ],
   },
-  {
-    title: "Machine Learning Based Home Price Prediction",
-    description: "Developed a web app to predict home prices using a machine learning model (sklearn, linear regression). The project includes data cleaning, feature engineering, a Flask API for predictions, and deployment on AWS EC2.",
-    media: {
-      type: "image",
-      url: "/projects/images/priceprediction.png ", // Replace with your image path
-    },
-    github: "https://github.com/Hasnainsardarr/Real-Estate-Price-Model",
-    demo: "http://13.127.81.177:8080/",
-    technologies: ["Flask", "AWS", "Scikit-learn", "Pandas"],
-  },
+
   {
     title: "Atliq Hardware Sales Insights Dashboard",
-    description: "Analyzed Atliq Hardware sales with Power BI, uncovering trends, regional performance, customer behavior, and top/bottom products for data-driven decisions.",
+    description:
+      "Analyzed Atliq Hardware sales with Power BI, uncovering trends, regional performance, customer behavior, and top/bottom products for data-driven decisions.",
     media: {
       type: "gif",
       url: "/projects/gifs/atliqPBI.gif", // Replace with your GIF path
@@ -154,7 +213,8 @@ const projects: Project[] = [
   },
   {
     title: "T20 World Cup 2022 Analytics",
-    description: "Analyzed T20 World Cup 2022 data from ESPN Cricinfo, using Python, Pandas, and Power Query for cleaning and transformation. Developed a Power BI dashboard with dynamic insights and player selection based on performance metrics.",
+    description:
+      "Analyzed T20 World Cup 2022 data from ESPN Cricinfo, using Python, Pandas, and Power Query for cleaning and transformation. Developed a Power BI dashboard with dynamic insights and player selection based on performance metrics.",
     media: {
       type: "gif",
       url: "/projects/gifs/t20.gif", // Replace with your GIF path
@@ -163,8 +223,7 @@ const projects: Project[] = [
     demo: "https://github.com/Hasnainsardarr",
     technologies: ["Power BI", "Web Scrapping", "Pandas", "Power Query", "DAX"],
   },
-  
-]
+];
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false)

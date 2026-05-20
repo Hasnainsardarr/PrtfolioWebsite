@@ -57,8 +57,22 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        }
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        "marquee-reverse": "marquee-reverse 25s linear infinite",
+      }
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
 

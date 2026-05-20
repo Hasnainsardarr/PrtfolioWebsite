@@ -1,0 +1,64 @@
+Create a modern “Trust / Social Proof” section directly below the Hero section of my portfolio website.
+
+The section should feel premium, clean, and dynamic — similar to modern SaaS landing pages that use continuously moving marquee/sliding rows.
+
+## Objective
+
+Instantly build credibility by showcasing:
+
+1. Client testimonials
+2. Achievements / certifications / companies / products worked with
+
+---
+
+## Layout Structure
+
+Create TWO horizontally animated marquee rows:
+
+### Row 1 → Client Testimonials
+
+* Infinite auto-scrolling horizontal slider
+* Smooth continuous movement (not jumpy carousel behavior)
+* Each item should be a modern testimonial card
+* Include:
+
+  * short testimonial text
+  * client name
+  * role/company (optional)
+* Add subtle hover effects:
+
+  * pause animation on hover
+  * slight scale-up
+  * glow/shadow effect
+
+Example card style:
+
+* rounded-xl
+* glassmorphism or soft dark UI
+* compact and clean
+* premium typography
+
+---
+
+### Row 2 → Achievements / Highlights
+
+Another independent scrolling marquee below testimonials.
+
+Items may include:
+
+* Certifications
+* LinkedIn achievements
+* Important products worked on
+* Companies collaborated with
+* Tech partnerships
+* Major milestones
+
+Display them as:
+
+* pill cards OR logo-style highlight cards
+* include icons/logos if available
+* minimal but visually impressive
+
+
+
+The final result should look like a premium AI engineer / SaaS freelancer portfolio section that immediately increases trust and professionalism.

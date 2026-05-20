@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
+import TrustSection from "@/components/trust-section"
 import Projects from "@/components/projects"
 import About from "@/components/about"
 import Experience from "@/components/experience"
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen bg-background pt-16">
       <Navbar />
       <Hero />
+      <TrustSection />
       <Experience />
       <Projects />
       <About />

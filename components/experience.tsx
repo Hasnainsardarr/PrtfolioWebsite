@@ -13,7 +13,7 @@ const stats = [
   },
   {
     icon: Briefcase,
-    value: 2,
+    value: 3,
     label: "Years Experience",
     suffix: "+",
   },
@@ -28,7 +28,7 @@ const stats = [
 const experiences = [
   {
     title: "AI Engineer",
-    company: "DotLabs",
+    company: "Softexlogic",
     period: "Jun 2025 - Present",
     description:
       "Working as an AI Engineer, building end-to-end AI solutions including Retrieval-Augmented Generation (RAG) systems, chatbot development, and model integration. Contributed to projects involving LangChain, LangGraph, multimodal embeddings, and backend engineering to deliver production-ready AI applications.",
@@ -56,7 +56,7 @@ const experiences = [
   // },
   {
     title: "Freelance Full Stack AI Engineer",
-    company: "Self-Employed",
+    company: "Upwork",
     period: "2023 - Present",
     description:
       "Collaborated with multiple clients worldwide, delivering data-driven solutions, dashboard development, and predictive analytics to enhance decision-making.",
